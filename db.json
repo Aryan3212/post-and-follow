@@ -1,0 +1,44 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "user 1",
+            "following": [
+                2
+            ]
+        },
+        {
+            "id": 2,
+            "name": "user 2",
+            "following": [
+                1,
+                3
+            ]
+        },
+        {
+            "id": 3,
+            "name": "user 3",
+            "following": [
+                1,
+                2
+            ]
+        }
+    ],
+    "tweets": [
+        {
+            "id": 1,
+            "author": 1,
+            "body": "hi this is me!"
+        },
+        {
+            "id": 2,
+            "author": 2,
+            "body": "welcome to my tweet"
+        },
+        {
+            "id": 3,
+            "author": 3,
+            "body": "having a great day!"
+        }
+    ]
+}
