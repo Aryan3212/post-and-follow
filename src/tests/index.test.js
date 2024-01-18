@@ -1,10 +1,10 @@
-import app from '../api/v1/app.js';
+import app from '../app.js';
 import { describe, it, after } from 'node:test';
 import { promisify } from 'node:util';
 import assert from 'node:assert/strict';
 
 describe('All tests for mini twitter assuming I am user 1', async () => {
-    let baseUrl = 'http://localhost:3002/api/v1/';
+    let baseUrl = 'http://localhost:3002/v1/';
     const server = app.listen(3002, () => {
         console.log('Test Server is running on port 3002');
     });

@@ -1,4 +1,4 @@
-import jsonDb from '../../../../db.json' assert { type: "json" };;
+import jsonDb from '../../db.json' assert { type: "json" };;
 
 let db;
 
