@@ -1,5 +1,5 @@
 import jsonDb from '../../db.json' assert { type: "json" };;
-
+import { stringComparator } from '../utils/index.js';
 let db;
 
 export function initializeDatabase() {
@@ -8,7 +8,7 @@ export function initializeDatabase() {
 }
 
 export function getAllTweets() {
-    db.tweets.sort((a, b) => a.timestamp === b.timestamp ? 0 : (a.timestamp > b.timestamp ? 1 : -1));
+    db.tweets.sort((a, b) => stringComparator(a.timestamp, b.timestamp));
     return db.tweets;
 }
 
