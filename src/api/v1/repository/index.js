@@ -8,6 +8,7 @@ export function initializeDatabase() {
 }
 
 export function getAllTweets() {
+    db.tweets.sort((a, b) => a.timestamp === b.timestamp ? 0 : (a.timestamp > b.timestamp ? 1 : -1));
     return db.tweets;
 }
 
