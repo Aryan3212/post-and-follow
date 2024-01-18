@@ -34,7 +34,6 @@ export function getFollowingTweets(userId) {
 
 
 export function getAllUserTweets(userId) {
-    console.log('arra', userId);
     const query = db.tweets.filter(({ author }) => author === userId);
     return query;
 }
