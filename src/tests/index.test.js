@@ -15,34 +15,39 @@ describe('All tests for mini twitter assuming I am user 1', async () => {
         {
             "id": 1,
             "author": 1,
-            "body": "hi this is me!"
-        },
-        {
-            "id": 2,
-            "author": 2,
-            "body": "welcome to my tweet"
+            "body": "hi this is me!",
+            "timestamp": "2024-01-12T15:51:17.055761"
         },
         {
             "id": 3,
             "author": 3,
-            "body": "having a great day!"
+            "body": "having a great day!",
+            "timestamp": "2024-01-18T15:21:17.055761"
+        },
+        {
+            "id": 2,
+            "author": 2,
+            "body": "welcome to my tweet",
+            "timestamp": "2024-01-18T15:51:17.055761"
         }
     ]
     const followingTweets = [
         {
             "id": 2,
             "author": 2,
-            "body": "welcome to my tweet"
+            "body": "welcome to my tweet",
+            "timestamp": "2024-01-18T15:51:17.055761"
         }
     ]
     const postedTweets = [
         {
             "id": 1,
             "author": 1,
-            "body": "hi this is me!"
+            "body": "hi this is me!",
+            "timestamp": "2024-01-12T15:51:17.055761"
         }
     ]
-    await it('should return all tweets', async () => {
+    await it('should return all tweets sorted by timestamp', async () => {
         const requestUrl = baseUrl + 'tweets/';
         const response = await fetch(requestUrl);
         const body = await response.json()
