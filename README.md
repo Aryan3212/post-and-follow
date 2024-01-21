@@ -1,6 +1,6 @@
 # Mini Twitter
 
-A practice project simulating a twitter REST API using TDD.
+A twitter-like REST API using TDD.
 
 ## Prerequisites
 - Node.js v18+
