@@ -1,4 +1,4 @@
-# Mini Twitter
+# Post and Follow
 
 A twitter-like REST API using TDD.
 
