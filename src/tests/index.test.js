@@ -68,4 +68,11 @@ describe('All tests for mini twitter assuming I am user 1', async () => {
         assert.equal(response.status, 200);
         assert.deepEqual(body, postedTweets);
     })
+    await it('should return my email has been sent', async () => {
+        const requestUrl = baseUrl + 'forgot-password';
+        const response = await fetch(requestUrl);
+        const body = await response.json()
+        assert.equal(response.status, 200);
+        assert.deepEqual(body,{ message: "Password Reset Request sent to your mail" });
+    })
 })
