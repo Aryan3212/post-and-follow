@@ -8,3 +8,10 @@
 export function stringComparator(a, b) {
     return a === b ? 0 : (a > b ? 1 : -1)
 }
+
+
+export const asyncHandler = fn => (req, res, next) => {
+    return Promise
+        .resolve(fn(req, res, next))
+        .catch(next);
+};
