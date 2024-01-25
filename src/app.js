@@ -1,7 +1,7 @@
 import express from "express";
 import v1Routes from "./routes/v1/index.js";
 import morgan from "morgan";
-import { initializeDatabase } from "./repository/index.js";
+import { initializeDatabase } from "./services/index.js";
 
 initializeDatabase();
 const router = new express.Router();
@@ -12,5 +12,10 @@ app.use(express.json());
 app.use(morgan('dev'));
 app.use(router)
 
+app.use(function (err, req, res, next) {
+    // TODO: Store this stack trace somewhere for debugging.
+    console.error(err.stack)
+    res.status(500).send('Something broke!')
+  })
 
 export default app;
