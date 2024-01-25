@@ -44,7 +44,7 @@ export function sendPasswordRequest() {
     const queueResponse = queue.add('email: ', {
         body: 'Password reset request received!',
         email: 'rahman.aryan07@gmail.com' // user.email
-    }, { delay: 2000 })
+    }, { delay: 2000, removeOnComplete: true, removeOnFail: false  })
     return queueResponse
 }
 
