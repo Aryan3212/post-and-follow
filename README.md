@@ -5,7 +5,7 @@ A twitter-like REST API using TDD.
 ## Prerequisites
 - Node.js v20
   - Need version 20 to load env file natively.
-- Redis
+- Docker
 
 ## Installation
 ```sh
