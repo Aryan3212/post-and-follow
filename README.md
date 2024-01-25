@@ -2,6 +2,11 @@
 
 A twitter-like REST API using TDD.
 
+Highlights:
+1. Test-driven development
+2. Caching implemented
+3. Message Queue implemented using BullMQ
+
 ## Prerequisites
 - Node.js v20
   - Need version 20 to load env file natively.
