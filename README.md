@@ -14,6 +14,18 @@ cd mini-twitter
 npm install
 ```
 ## Usage
+Copy .env.example file into a new .env file:
+```
+cp .env.example .env
+```
+
+Set env variables:
+
+You can set up a separate App Password for Gmail here [https://support.google.com/mail/answer/185833?hl=en](https://support.google.com/mail/answer/185833?hl=en)
+```
+EMAIL=<youremail>@gmail.com
+EMAIL_PASS=<gmail_app_password>
+```
 
 Spin up Redis Docker Container:
 ```
