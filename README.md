@@ -21,7 +21,7 @@ cp .env.example .env
 
 Set env variables:
 
-You can set up a separate App Password for Gmail here [https://support.google.com/mail/answer/185833?hl=en](https://support.google.com/mail/answer/185833?hl=en)
+Know how to set up a separate App Password for Gmail here [https://support.google.com/mail/answer/185833?hl=en](https://support.google.com/mail/answer/185833?hl=en)
 ```
 EMAIL=<youremail>@gmail.com
 EMAIL_PASS=<gmail_app_password>
